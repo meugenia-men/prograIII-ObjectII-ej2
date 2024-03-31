@@ -66,4 +66,14 @@ public class Bill {
                 "] - [Email = "+this.client.getEmail()+
                 "]";
     }
+
+    public void printItems(){
+        for(SaleItem item:saleItems){
+            System.out.println("__________________________________________");
+            System.out.println("ID = "+item.getId());
+            System.out.println("Nombre = "+item.getName());
+            System.out.println("Descripcion = "+item.getDescription());
+            System.out.println("Precio Unitario = "+item.getUnitPrice());
+        }
+    }
 }

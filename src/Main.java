@@ -22,6 +22,7 @@ public class Main {
         System.out.println("Total de la factura es "+bill1.totalAmount());
 
         System.out.println(bill1.toString());
+        bill1.printItems();
 
     }
 }
