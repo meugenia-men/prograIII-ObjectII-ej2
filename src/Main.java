@@ -8,6 +8,7 @@ public class Main {
 
         Client client1 = new Client("Eugenia", "mariuneira@hotmail.com", 25);
 
+        System.out.println("________________________________________________Imprime cliente instanciado_____________________________________________________");
         System.out.println(client1.toString());
 
         SaleItem saleItem1 = new SaleItem("Jean", "pantalon talle M", 35000d, 10);
@@ -18,9 +19,10 @@ public class Main {
         saleItems.add(saleItem2);
 
         Bill bill1 = new Bill(client1,saleItems);
+        System.out.println("________________________________________________________________________________________________________________________________");
+        System.out.println("Total de la factura con descuente es "+bill1.totalAmount());
 
-        System.out.println("Total de la factura es "+bill1.totalAmount());
-
+        System.out.println("_________________________________________________________________Imprime detalle de la factura________________________________________________________________________________________________");
         System.out.println(bill1.toString());
         bill1.printItems();
 
